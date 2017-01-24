@@ -1,0 +1,12 @@
+coverage/
+node_modules/
+bower_components/
+
+## Directory-based project format:
+.idea/
+
+.idea_modules/
+
+.DS_Store
+.AppleDouble
+.LSOverride
