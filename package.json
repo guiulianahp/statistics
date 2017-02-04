@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "bff": "node ./built/server/index.js",
+    "sfs": "serve ./built/statics --port 3001 --cache 0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +21,10 @@
   "homepage": "https://github.com/guiulianahp/statistics#readme",
   "dependencies": {
     "chart.js": "^2.4.0",
+    "isomorphic-fetch": "^2.2.1",
+    "moment": "^2.17.1",
     "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
     "react-chartjs-2": "^2.0.0",
     "react-dom": "^15.4.2",
     "react-router": "^4.0.0-alpha.6"
@@ -27,9 +32,17 @@
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.22.0",
+    "babel-preset-es2016": "^6.22.0",
+    "babel-preset-es2017": "^6.22.0",
     "babel-preset-latest-minimal": "^1.1.2",
     "babel-preset-react": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "json-loader": "^0.5.4",
+    "list": "^0.9.5",
+    "serve": "^2.4.3",
+    "style-loader": "^0.13.1",
     "webpack": "^1.14.0"
   }
 }

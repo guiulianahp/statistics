@@ -9,7 +9,7 @@ import Home from './Home.jsx';
 import About from './About.jsx';
 import Error404 from './Error404.jsx';
 
-function Pages() {
+function Main() {
     return(
         <main role="application">
             <Match
@@ -22,4 +22,4 @@ function Pages() {
     )
 }
 
-export default Pages;
+export default Main;
