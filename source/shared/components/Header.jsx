@@ -11,9 +11,6 @@ function Header() {
             </h1>
 
             <nav role="navigation" className={styles.navigation}>
-                <Link to="/" className={styles.link}>
-                    Home
-                </Link>
                 <a
                     className={styles.link}
                     href="https://app2.simpliroute.com"

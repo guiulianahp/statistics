@@ -20,7 +20,8 @@
 
 .navigation {
     display: flex;
-    padding: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
 }
 
 .link {

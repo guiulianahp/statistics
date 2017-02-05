@@ -1,41 +1,21 @@
 import React, { Component } from 'react';
 import Header from '../../shared/components/Header.jsx'
-import Graphics from '../../Graphics/components/Graphics.jsx'
+import Indicator from '../../indicators/components/Indicator.jsx'
 
-
-const dataDoughnut = {
-    labels: [
-        'Red',
-        'Green',
-        'Yellow'
-    ],
-    datasets: [{
-        data: [300, 50, 100],
-        backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56'
-        ],
-        hoverBackgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56'
-        ]
-    }]
-};
+const dateInit = "2017-02-05";
 
 class Home extends Component {
+
     constructor(props){
         super(props);
-
         this.state = {
-            loading: true,
+            date: dateInit,
         };
     }
 
     async componentDidMount() {
         this.setState({
-            loading: false,
+            date: dateInit,
         })
     }
 
@@ -44,19 +24,8 @@ class Home extends Component {
             <div>
                 <Header/>
                 <div name="container">
-                    {this.state.loading && (
-                        <h2>loading data...</h2>
-                    )}
-                    <div className="animate">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <Graphics/>
-                            </div>
-                            <div className="col-md-6">
-                                <Graphics/>
-                            </div>
-                        </div>
-                    </div>
+
+                    <Indicator date={this.state.date}/>
                 </div>
             </div>
         );

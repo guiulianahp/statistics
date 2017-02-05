@@ -7,7 +7,7 @@ import Main from './dashboard/containers/Dashboard.jsx';
 import Layout from './dashboard/components/Layout.jsx';
 
 function requestHandler(request, response){
-  const context = createServerRenderContext()
+  const context = createServerRenderContext();
   let html = renderToString(
     <ServerRouter location={request.url} context={context}>
       <Main />

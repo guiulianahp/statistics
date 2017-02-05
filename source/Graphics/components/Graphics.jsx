@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Graphic from '../../Graphic/components/Graphic.jsx'
+import Graphic from '../../Graphic/components/Graphic'
 
 class Graphics extends Component {
     constructor(props){

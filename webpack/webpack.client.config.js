@@ -23,7 +23,15 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style', 'css?modules')
+                loader: ExtractTextPlugin.extract('style', 'css?modules', 'isomorphic-style-loader')
+            },
+            {
+                test: /\.scss$/,
+                loaders: [
+                    'isomorphic-style-loader',
+                    'css-loader?modules&localIdentName=[name]_[local]_[hash:base64:3]',
+                    'postcss-loader'
+                ]
             }
         ]
     },
