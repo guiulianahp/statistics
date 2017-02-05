@@ -10,8 +10,8 @@
 6 silly lifecycle statistics@1.0.0~prebff: no script for prebff, continuing
 7 info lifecycle statistics@1.0.0~bff: statistics@1.0.0
 8 verbose lifecycle statistics@1.0.0~bff: unsafe-perm in lifecycle true
-9 verbose lifecycle statistics@1.0.0~bff: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/guiulianaheran/Documents/project-react/statistics/node_modules/.bin:/usr/local/Cellar/node/7.1.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/guiulianaheran/Library/Android/sdk/tools:/Users/guiulianaheran/Library/Android/sdk/platform-tools
-10 verbose lifecycle statistics@1.0.0~bff: CWD: /Users/guiulianaheran/Documents/project-react/statistics
+9 verbose lifecycle statistics@1.0.0~bff: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/guiulianaheran/Documents/dashboards/statistics/node_modules/.bin:/usr/local/Cellar/node/7.1.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/guiulianaheran/Library/Android/sdk/tools:/Users/guiulianaheran/Library/Android/sdk/platform-tools
+10 verbose lifecycle statistics@1.0.0~bff: CWD: /Users/guiulianaheran/Documents/dashboards/statistics
 11 silly lifecycle statistics@1.0.0~bff: Args: [ '-c', 'node ./built/server/index.js' ]
 12 silly lifecycle statistics@1.0.0~bff: Returned: code: 1  signal: null
 13 info lifecycle statistics@1.0.0~bff: Failed to exec bff script
@@ -26,7 +26,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:877:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid statistics@1.0.0
-16 verbose cwd /Users/guiulianaheran/Documents/project-react/statistics
+16 verbose cwd /Users/guiulianaheran/Documents/dashboards/statistics
 17 error Darwin 16.1.0
 18 error argv "/usr/local/Cellar/node/7.1.0/bin/node" "/usr/local/bin/npm" "run" "bff"
 19 error node v6.9.1

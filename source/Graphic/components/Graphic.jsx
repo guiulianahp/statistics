@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import api from '../../api.js'
 import {Bar} from 'react-chartjs-2';
+import { Panel } from 'react-bootstrap';
 
 const chartOptions = {
 
@@ -110,12 +111,14 @@ class Graphic extends Component {
 
     render() {
         return(
-            <div className="col-md-6">
-                <Bar
-                    data={this.state.dataGraphic}
-                    options={chartOptions}
-                />
-            </div>
+           <div className="col-md-6" id="barChart">
+                    <Panel
+                        header={<span>Bar Chart </span>}
+                        bsStyle="primary"
+                    >
+                        <Bar data={this.state.dataGraphic} options={chartOptions} />
+                    </Panel>
+           </div>
         )
     }
 }
