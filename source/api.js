@@ -42,6 +42,18 @@ const api = {
             const result = _orderByMonth(data);
             return result;
         }
+    },
+    plan: {
+        async getVehiclesByDate(date) {
+            const response = await fetch(`${url}plans/` + date +`/vehicles/`, _getAuthentication('GET'));
+            const data = await response.json();
+            return data;
+        },
+        async getRoutesByDate(date) {
+            const response = await fetch(`${url}routes/plans/` + date +`/routes/`, _getAuthentication('GET'));
+            const data = await response.json();
+            return data;
+        }
     }
 
 };

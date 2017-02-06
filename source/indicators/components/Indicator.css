@@ -2,56 +2,68 @@
     padding: 1em;
 }
 
-.panel-green {
+:global .panel-green {
     border-color: #5cb85c;
 }
 
-.panel-green .panel-heading {
+:global .panel-green .panel-heading {
     border-color: #5cb85c;
     color: #fff;
     background-color: #5cb85c;
 }
 
-.panel-green a {
+:global .panel-green a {
     color: #5cb85c;
 }
 
-.panel-green a:hover {
+:global .panel-green a:hover {
     color: #3d8b3d;
 }
 
-.panel-red {
+:global .panel-red {
     border-color: #d9534f;
 }
 
-.panel-red .panel-heading {
+:global .panel-red .panel-heading {
     border-color: #d9534f;
     color: #fff;
     background-color: #d9534f;
 }
 
-.panel-red a {
+:global .panel-red a {
     color: #d9534f;
 }
 
-.panel-red a:hover {
+:global .panel-red a:hover {
     color: #b52b27;
 }
 
-.panel-yellow {
+:global .panel-yellow {
     border-color: #f0ad4e;
 }
 
-.panel-yellow .panel-heading {
+:global .panel-yellow .panel-heading {
     border-color: #f0ad4e;
     color: #fff;
     background-color: #f0ad4e;
 }
 
-.panel-yellow a {
+:global .panel-yellow a {
     color: #f0ad4e;
 }
 
-.panel-yellow a:hover {
+:global .panel-yellow a:hover {
     color: #df8a13;
+}
+
+:global .huge {
+    font-size: 36px;
+}
+
+:global path .fill {
+    color: white;
+}
+
+:global .graphics {
+    padding: 2em;
 }

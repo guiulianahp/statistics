@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Panel } from 'react-bootstrap';
 
+// import { FaBeer }from 'react-icons/fa/beer.js';
+
 class StatWidget extends Component{ // eslint-disable-line
 
     render() {

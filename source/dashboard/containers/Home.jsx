@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../shared/components/Header.jsx'
 import Indicator from '../../indicators/components/Indicator.jsx'
+import Graphics from '../../graphics/components/Graphics.jsx'
 
 const dateInit = "2017-02-05";
 
@@ -24,8 +25,8 @@ class Home extends Component {
             <div>
                 <Header/>
                 <div name="container">
-
                     <Indicator date={this.state.date}/>
+                    <Graphics date={this.state.date}/>
                 </div>
             </div>
         );
