@@ -9,17 +9,21 @@ function Header() {
             <h1 className={styles.title}>
                 SimpliRoute Dashboard
             </h1>
+            <div>
+                <nav role="navigation" className={styles.navigation}>
+                    <a
+                        className={styles.link}
+                        href="https://app2.simpliroute.com"
+                        target="_blank"
 
-            <nav role="navigation" className={styles.navigation}>
-                <a
-                    className={styles.link}
-                    href="https://app2.simpliroute.com"
-                    target="_blank"
-
-                >
-                    SimpliRoute Web
-                </a>
-            </nav>
+                    >
+                        SimpliRoute Web
+                    </a>
+                </nav>
+                <div className={styles.date}>
+                    <i className="fa fa-calendar fa-2x"/>
+                </div>
+            </div>
         </header>
     )
 }

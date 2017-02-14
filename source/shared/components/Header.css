@@ -50,3 +50,16 @@
     width: 50%;
     height: 50%;
 }
+
+.date{
+    color: white;
+    float: right;
+    margin-top: -44px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.string {
+    margin: 15px;
+    font-size: 20px;
+}

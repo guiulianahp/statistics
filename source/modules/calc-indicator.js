@@ -16,7 +16,7 @@ class CalculationOfIndicator {
                 color: '#000',
                 title: 'Used Vehicles',
                 value: this.vehicles.length,
-                icon: "M16 9l-2-4h-3v-2c0-0.55-0.45-1-1-1h-9c-0.55 0-1 0.45-1 1v8l1 1h1.268c-0.17 0.294-0.268 0.636-0.268 1 0 1.105 0.895 2 2 2s2-0.895 2-2c0-0.364-0.098-0.706-0.268-1h5.536c-0.17 0.294-0.268 0.636-0.268 1 0 1.105 0.895 2 2 2s2-0.895 2-2c0-0.364-0.098-0.706-0.268-1h1.268v-3zM11 9v-3h2.073l1.5 3h-3.573z",
+                icon: "fa fa-truck fa-5x",
                 footerText: 'Daily indicator'
 
             },
@@ -25,7 +25,7 @@ class CalculationOfIndicator {
                 color: '#000',
                 title: 'Created Routes',
                 value: this.routes.length,
-                icon: "M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM1.5 8c0-3.59 2.91-6.5 6.5-6.5 1.712 0 3.269 0.662 4.43 1.744l-6.43 2.756-2.756 6.43c-1.082-1.161-1.744-2.718-1.744-4.43zM9.143 9.143l-4.001 1.715 1.715-4.001 2.286 2.286zM8 14.5c-1.712 0-3.269-0.662-4.43-1.744l6.43-2.756 2.756-6.43c1.082 1.161 1.744 2.718 1.744 4.43 0 3.59-2.91 6.5-6.5 6.5z",
+                icon: "fa fa-map fa-5x",
                 footerText: 'Daily indicator'
 
             },
@@ -34,7 +34,7 @@ class CalculationOfIndicator {
                 color: '#000',
                 title: 'Average Load',
                 value: averageLoad,
-                icon: "M11 16h5l-4-16h-3l0.5 4h-3l0.5-4h-3l-4 16h5l0.5-4h5l0.5 4zM5.75 10l0.5-4h3.5l0.5 4h-4.5z",
+                icon: "fa fa-square fa-5x",
                 footerText: 'Daily indicator'
             },
             {
@@ -42,7 +42,7 @@ class CalculationOfIndicator {
                 color: '#000',
                 title: 'Average Time',
                 value: averageTime,
-                icon: "M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM10.293 11.707l-3.293-3.293v-4.414h2v3.586l2.707 2.707-1.414 1.414z",
+                icon: "fa fa-clock-o fa-5x",
                 footerText: 'Daily indicator'
             }
         ]

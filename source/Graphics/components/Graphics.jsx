@@ -47,9 +47,9 @@ const dataLine = {
 
 const dataPie = {
     labels: [
-        'Red',
-        'Green',
-        'Yellow'
+        'Completed',
+        'failed',
+        'pending'
     ],
     datasets: [{
         data: [300, 50, 100],
@@ -205,15 +205,7 @@ class Graphics extends Component {
                 <div className="row">
                     <div className="col-md-4">
                         <Panel
-                            header={<span>Line Chart </span>}
-                            bsStyle="primary"
-                        >
-                            <Line data={dataLine} options={chartOptions} />
-                        </Panel>
-                    </div>
-                    <div className="col-md-4">
-                        <Panel
-                            header={<span>Bar Chart </span>}
+                            header={<span> Kilometers traveled </span>}
                             bsStyle="primary"
                         >
                             <Bar data={data} options={chartOptions} />
@@ -221,7 +213,15 @@ class Graphics extends Component {
                     </div>
                     <div className="col-md-4">
                         <Panel
-                            header={<span>Bar Chart </span>}
+                            header={<span> Vehicles Use </span>}
+                            bsStyle="primary"
+                        >
+                            <Line data={dataLine} options={chartOptions} />
+                        </Panel>
+                    </div>
+                    <div className="col-md-4">
+                        <Panel
+                            header={<span> Average delivery time for dispatches </span>}
                             bsStyle="primary"
                         >
                             <Bar data={data} options={chartOptions} />
@@ -231,15 +231,15 @@ class Graphics extends Component {
                 <div className="row">
                     <div className="col-md-6">
                         <Panel
-                            header={<span>Donut Chart </span>}
+                            header={<span> Despachos Entregados </span>}
                             bsStyle="primary"
                         >
-                            <Doughnut data={dataPie} options={donutOptions} />
+                            <Bar data={data} options={chartOptions} />
                         </Panel>
                     </div>
                     <div className="col-md-6">
                         <Panel
-                            header={<span>Pie Chart </span>}
+                            header={<span> Dispatch status </span>}
                             bsStyle="primary"
                         >
                             <Pie data={dataPie} options={pieOptions} />

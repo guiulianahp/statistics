@@ -1,22 +1,29 @@
 import React, { Component } from 'react';
+import DatePicker from 'react-datepicker';
+import moment from 'moment';
 import Header from '../../shared/components/Header.jsx'
 import Indicator from '../../indicators/components/Indicator.jsx'
 import Graphics from '../../graphics/components/Graphics.jsx'
 
-const dateInit = "2017-02-05";
+require('react-datepicker/dist/react-datepicker-cssmodules.css');
+
+
+const startDate = moment().format("YYYY-MM-DD");
 
 class Home extends Component {
 
     constructor(props){
         super(props);
         this.state = {
-            date: dateInit,
+            date: startDate,
+            datePicker: ''
         };
     }
 
     async componentDidMount() {
         this.setState({
-            date: dateInit,
+            date: startDate,
+            datePicker: moment(startDate)
         })
     }
 
@@ -24,6 +31,14 @@ class Home extends Component {
         return (
             <div>
                 <Header/>
+                <div className="date-input">
+                    <DatePicker
+                        selected={this.state.datePicker}
+                        className="date-picker"
+                        dateFormat="YYYY-MM-DD"
+                        withPortal
+                    />
+                </div>
                 <div name="container">
                     <Indicator date={this.state.date}/>
                     <Graphics date={this.state.date}/>

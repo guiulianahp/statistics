@@ -67,3 +67,17 @@
 :global .graphics {
     padding: 2em;
 }
+
+:global .date-input {
+    float: right;
+    margin-top: -40px;
+    margin-right: -60px;
+    font-size: 20px;
+}
+
+:global .date-picker {
+    cursor: pointer;
+    background: transparent;
+    border: transparent;
+    color: white;
+}

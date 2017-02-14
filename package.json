@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node ./built/server/index.js serve ./built/statics --port 3001 --cache 0",
     "bff": "node ./built/server/index.js",
     "sfs": "serve ./built/statics --port 3001 --cache 0",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,6 +27,7 @@
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-chartjs-2": "^2.0.0",
+    "react-datepicker": "^0.40.0",
     "react-dom": "^15.4.2",
     "react-icons": "^2.2.3",
     "react-router": "^4.0.0-alpha.6"

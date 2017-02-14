@@ -10,9 +10,7 @@ class Numeric extends Component {
                     header = {
                         <div className="row">
                             <div className="col-xs-3">
-                                <svg width="60" height="60" viewBox="0 0 16 16">
-                                    <path fill="#fff" d={this.props.icon}></path>
-                                </svg>
+                                <i className={this.props.icon} />
                             </div>
                             <div className="col-xs-9 text-right">
                                 <div className="huge">{ this.props.value }
@@ -25,7 +23,7 @@ class Numeric extends Component {
                     footer = {
                         <div>
                             <span className="pull-left">{this.props.footerText}</span>
-                            <span className="pull-right"><i className="fa fa-arrow-circle-right" /></span>
+                            <span className="pull-right"></span>
                             <div className="clearfix" />
                         </div>
                     }
