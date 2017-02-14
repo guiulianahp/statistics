@@ -41,6 +41,9 @@ class Indicator extends Component {
         return(
 
             <div className={styles.indicator}>
+                {this.state.loading && (
+                    <div className="loading"></div>
+                )}
                 {this.state.dataNumeric
                     .map((numeric, idx) => <Numeric key={idx} {...numeric} />)}
             </div>

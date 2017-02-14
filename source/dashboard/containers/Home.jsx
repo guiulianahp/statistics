@@ -18,6 +18,14 @@ class Home extends Component {
             date: startDate,
             datePicker: ''
         };
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange (date) {
+        console.log(date.format());
+        this.setState({
+            datePicker: date
+        });
     }
 
     async componentDidMount() {
@@ -36,6 +44,7 @@ class Home extends Component {
                         selected={this.state.datePicker}
                         className="date-picker"
                         dateFormat="YYYY-MM-DD"
+                        onChange={this.handleChange}
                         withPortal
                     />
                 </div>

@@ -81,3 +81,10 @@
     border: transparent;
     color: white;
 }
+
+:global .loading {
+    width: 80px;
+    content: url(http://mupit.icm.jhu.edu/MuPIT_Interactive/images/load.gif);
+    display: table;
+    margin: 0 auto;
+}

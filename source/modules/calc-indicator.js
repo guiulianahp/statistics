@@ -34,7 +34,7 @@ class CalculationOfIndicator {
                 color: '#000',
                 title: 'Average Load',
                 value: averageLoad,
-                icon: "fa fa-square fa-5x",
+                icon: "fa fa-balance-scale fa-5x",
                 footerText: 'Daily indicator'
             },
             {

@@ -144,6 +144,13 @@ path .fill {
     background: transparent;
     border: transparent;
     color: white;
+}
+
+.loading {
+    width: 80px;
+    content: url(http://mupit.icm.jhu.edu/MuPIT_Interactive/images/load.gif);
+    display: table;
+    margin: 0 auto;
 }.react-datepicker__tether-element-attached-top .react-datepicker__triangle, .react-datepicker__tether-element-attached-bottom .react-datepicker__triangle, .react-datepicker__year-read-view--down-arrow,
 .react-datepicker__month-read-view--down-arrow {
   margin-left: -8px;

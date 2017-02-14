@@ -24353,6 +24353,14 @@
 	            date: startDate,
 	            datePicker: ''
 	        };
+	        this.handleChange = this.handleChange.bind(this);
+	    }
+
+	    handleChange(date) {
+	        console.log(date.format());
+	        this.setState({
+	            datePicker: date
+	        });
 	    }
 
 	    componentDidMount() {
@@ -24378,6 +24386,7 @@
 	                    selected: this.state.datePicker,
 	                    className: 'date-picker',
 	                    dateFormat: 'YYYY-MM-DD',
+	                    onChange: this.handleChange,
 	                    withPortal: true
 	                })
 	            ),
@@ -39364,10 +39373,17 @@
 	  };
 
 	  /**
+	   * Check if the browser scrollbar was clicked
+	   */
+	  var clickedScrollbar = function(evt) {
+	    return document.documentElement.clientWidth <= evt.clientX;
+	  };
+
+	  /**
 	   * Generate the event handler that checks whether a clicked DOM node
 	   * is inside of, or lives outside of, our Component's node tree.
 	   */
-	  var generateOutsideCheck = function(componentNode, componentInstance, eventHandler, ignoreClass, preventDefault, stopPropagation) {
+	  var generateOutsideCheck = function(componentNode, componentInstance, eventHandler, ignoreClass, excludeScrollbar, preventDefault, stopPropagation) {
 	    return function(evt) {
 	      if (preventDefault) {
 	        evt.preventDefault();
@@ -39376,7 +39392,7 @@
 	        evt.stopPropagation();
 	      }
 	      var current = evt.target;
-	      if(findHighest(current, componentNode, ignoreClass) !== document) {
+	      if((excludeScrollbar && clickedScrollbar(evt)) || (findHighest(current, componentNode, ignoreClass) !== document)) {
 	        return;
 	      }
 	      eventHandler(evt);
@@ -39473,6 +39489,7 @@
 	            instance,
 	            clickOutsideHandler,
 	            this.props.outsideClickIgnoreClass || IGNORE_CLASS,
+	            this.props.excludeScrollbar || false,
 	            this.props.preventDefault || false,
 	            this.props.stopPropagation || false
 	          );
@@ -39554,7 +39571,9 @@
 	          var passedProps = this.props;
 	          var props = {};
 	          Object.keys(this.props).forEach(function(key) {
-	            props[key] = passedProps[key];
+	            if (key !== 'excludeScrollbar') {
+	              props[key] = passedProps[key];
+	            }
 	          });
 	          if (Component.prototype.isReactComponent) {
 	            props.ref = 'instance';
@@ -40809,6 +40828,7 @@
 	        return _react2.default.createElement(
 	            'div',
 	            { className: _Indicator2.default.indicator },
+	            this.state.loading && _react2.default.createElement('div', { className: 'loading' }),
 	            this.state.dataNumeric.map((numeric, idx) => _react2.default.createElement(_Numeric2.default, _extends({ key: idx }, numeric)))
 	        );
 	    }
@@ -71809,7 +71829,7 @@
 	            color: '#000',
 	            title: 'Average Load',
 	            value: averageLoad,
-	            icon: "fa fa-square fa-5x",
+	            icon: "fa fa-balance-scale fa-5x",
 	            footerText: 'Daily indicator'
 	        }, {
 	            panelHead: "panel-red",
