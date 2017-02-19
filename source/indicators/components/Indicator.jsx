@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import api from '../../api.js'
 import { Panel } from 'react-bootstrap';
 import styles from './Indicator.css';
+import moment from 'moment';
 import CalculationOfIndicator from '../../modules/calc-indicator'
 
 
@@ -17,7 +18,7 @@ class Indicator extends Component {
     }
 
     async componentDidMount() {
-        let date = this.props.date;
+        let date = this.props.date.format('YYYY-MM-DD');
         const [
             vehicles,
             routes,
@@ -34,27 +35,25 @@ class Indicator extends Component {
         })
     }
 
+    async componentWillReceiveProps(nextProps){
 
+        let date = nextProps.date.format('YYYY-MM-DD');
+        const [
+            vehicles,
+            routes,
+        ] = await Promise.all([
+            api.plan.getVehiclesByDate(date),
+            api.plan.getRoutesByDate(date),
+        ]);
 
-   // async componentWillReceiveProps() {
-   //
-   //     let date = this.props.date;
-   //     console.log(date);
-   //     const [
-   //         vehicles,
-   //         routes,
-   //     ] = await Promise.all([
-   //         api.plan.getVehiclesByDate(date),
-   //         api.plan.getRoutesByDate(date),
-   //     ]);
-   //
-   //     let jsonIndicator = new CalculationOfIndicator(vehicles, routes);
-   //
-   //     this.setState({
-   //         dataNumeric: jsonIndicator.getNumeric(),
-   //         loading: false,
-   //     })
-   //  }
+        let jsonIndicator = new CalculationOfIndicator(vehicles, routes);
+
+        this.setState({
+            dataNumeric: jsonIndicator.getNumeric(),
+            loading: false,
+        })
+
+    }
 
     render() {
        return(

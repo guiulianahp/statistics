@@ -62,7 +62,7 @@
 
 	var _Dashboard2 = _interopRequireDefault(_Dashboard);
 
-	var _Layout = __webpack_require__(687);
+	var _Layout = __webpack_require__(640);
 
 	var _Layout2 = _interopRequireDefault(_Layout);
 
@@ -24278,11 +24278,11 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _About = __webpack_require__(685);
+	var _About = __webpack_require__(638);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Error = __webpack_require__(686);
+	var _Error = __webpack_require__(639);
 
 	var _Error2 = _interopRequireDefault(_Error);
 
@@ -24341,7 +24341,7 @@
 
 	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-	__webpack_require__(683);
+	__webpack_require__(636);
 
 	const startDate = (0, _moment2.default)();
 
@@ -24351,18 +24351,15 @@
 	        super(props);
 	        this.state = {
 	            date: (0, _moment2.default)(startDate)
+
 	        };
 	        this.handleChange = this.handleChange.bind(this);
 	    }
 
-	    handleChange(date) {
+	    handleChange(dates) {
 	        this.setState({
-	            date: date
+	            date: dates
 	        });
-	    }
-
-	    getStringDate() {
-	        return this.state.date.format('YYYY-MM-DD');
 	    }
 
 	    componentDidMount() {
@@ -24370,7 +24367,6 @@
 	    }
 
 	    render() {
-	        let a = this.getStringDate();
 	        return _react2.default.createElement(
 	            'div',
 	            null,
@@ -24389,8 +24385,8 @@
 	            _react2.default.createElement(
 	                'div',
 	                { name: 'container' },
-	                _react2.default.createElement(_Indicator2.default, { date: a }),
-	                _react2.default.createElement(_Graphics2.default, { date: a })
+	                _react2.default.createElement(_Indicator2.default, { date: this.state.date }),
+	                _react2.default.createElement(_Graphics2.default, { date: this.state.date })
 	            )
 	        );
 	    }
@@ -40780,6 +40776,10 @@
 
 	var _Indicator2 = _interopRequireDefault(_Indicator);
 
+	var _moment = __webpack_require__(213);
+
+	var _moment2 = _interopRequireDefault(_moment);
+
 	var _calcIndicator = __webpack_require__(633);
 
 	var _calcIndicator2 = _interopRequireDefault(_calcIndicator);
@@ -40805,7 +40805,7 @@
 	        var _this = this;
 
 	        return _asyncToGenerator(function* () {
-	            let date = _this.props.date;
+	            let date = _this.props.date.format('YYYY-MM-DD');
 	            const [vehicles, routes] = yield Promise.all([_api2.default.plan.getVehiclesByDate(date), _api2.default.plan.getRoutesByDate(date)]);
 
 	            let jsonIndicator = new _calcIndicator2.default(vehicles, routes);
@@ -40817,25 +40817,22 @@
 	        })();
 	    }
 
-	    // async componentWillReceiveProps() {
-	    //
-	    //     let date = this.props.date;
-	    //     console.log(date);
-	    //     const [
-	    //         vehicles,
-	    //         routes,
-	    //     ] = await Promise.all([
-	    //         api.plan.getVehiclesByDate(date),
-	    //         api.plan.getRoutesByDate(date),
-	    //     ]);
-	    //
-	    //     let jsonIndicator = new CalculationOfIndicator(vehicles, routes);
-	    //
-	    //     this.setState({
-	    //         dataNumeric: jsonIndicator.getNumeric(),
-	    //         loading: false,
-	    //     })
-	    //  }
+	    componentWillReceiveProps(nextProps) {
+	        var _this2 = this;
+
+	        return _asyncToGenerator(function* () {
+
+	            let date = nextProps.date.format('YYYY-MM-DD');
+	            const [vehicles, routes] = yield Promise.all([_api2.default.plan.getVehiclesByDate(date), _api2.default.plan.getRoutesByDate(date)]);
+
+	            let jsonIndicator = new _calcIndicator2.default(vehicles, routes);
+
+	            _this2.setState({
+	                dataNumeric: jsonIndicator.getNumeric(),
+	                loading: false
+	            });
+	        })();
+	    }
 
 	    render() {
 	        return _react2.default.createElement(
@@ -72202,62 +72199,15 @@
 	exports.default = Graphics;
 
 /***/ },
-/* 636 */,
-/* 637 */,
-/* 638 */,
-/* 639 */,
-/* 640 */,
-/* 641 */,
-/* 642 */,
-/* 643 */,
-/* 644 */,
-/* 645 */,
-/* 646 */,
-/* 647 */,
-/* 648 */,
-/* 649 */,
-/* 650 */,
-/* 651 */,
-/* 652 */,
-/* 653 */,
-/* 654 */,
-/* 655 */,
-/* 656 */,
-/* 657 */,
-/* 658 */,
-/* 659 */,
-/* 660 */,
-/* 661 */,
-/* 662 */,
-/* 663 */,
-/* 664 */,
-/* 665 */,
-/* 666 */,
-/* 667 */,
-/* 668 */,
-/* 669 */,
-/* 670 */,
-/* 671 */,
-/* 672 */,
-/* 673 */,
-/* 674 */,
-/* 675 */,
-/* 676 */,
-/* 677 */,
-/* 678 */,
-/* 679 */,
-/* 680 */,
-/* 681 */,
-/* 682 */,
-/* 683 */
+/* 636 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"react-datepicker__month--selecting-range":"Bpx6wrwSv_0V4iNNDETFZ"};
 
 /***/ },
-/* 684 */,
-/* 685 */
+/* 637 */,
+/* 638 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72301,7 +72251,7 @@
 	exports.default = About;
 
 /***/ },
-/* 686 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72340,7 +72290,7 @@
 	exports.default = Error404;
 
 /***/ },
-/* 687 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

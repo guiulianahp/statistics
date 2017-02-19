@@ -15,26 +15,23 @@ class Home extends Component {
     constructor(props){
         super(props);
         this.state = {
-            date: moment(startDate)
+            date: moment(startDate),
+
         };
         this.handleChange = this.handleChange.bind(this);
     }
 
-    handleChange (date) {
+    handleChange (dates) {
         this.setState({
-            date: date
+            date: dates
         });
     }
 
-    getStringDate () {
-        return this.state.date.format('YYYY-MM-DD')
-    }
-
     async componentDidMount() {
+
     }
 
     render() {
-        let a = this.getStringDate();
         return (
             <div>
                 <Header/>
@@ -48,8 +45,8 @@ class Home extends Component {
                     />
                 </div>
                 <div name="container">
-                    <Indicator date={a}/>
-                    <Graphics date={a}/>
+                    <Indicator date={this.state.date}/>
+                    <Graphics date={this.state.date}/>
                 </div>
             </div>
         );
