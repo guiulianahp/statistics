@@ -69,10 +69,11 @@
 }
 
 :global .date-input {
-    float: right;
     margin-top: -40px;
-    margin-right: -60px;
+    padding-right: 40;
     font-size: 20px;
+    position: absolute;
+    right: 0%;
 }
 
 :global .date-picker {
@@ -80,6 +81,7 @@
     background: transparent;
     border: transparent;
     color: white;
+    text-align: right;
 }
 
 :global .loading {

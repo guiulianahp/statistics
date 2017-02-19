@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import api from '../../api.js'
 import { Panel } from 'react-bootstrap';
-import {Bar, Line, Pie, Doughnut} from 'react-chartjs-2';
+// import {Bar, Line, Pie, Doughnut} from 'react-chartjs-2';
 
 const data = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -192,7 +192,6 @@ class Graphics extends Component {
     }
 
     async componentDidMount() {
-
         this.setState({
             loading: false,
         })
@@ -202,50 +201,7 @@ class Graphics extends Component {
         return(
 
             <div className="graphics">
-                <div className="row">
-                    <div className="col-md-4">
-                        <Panel
-                            header={<span> Kilometers traveled </span>}
-                            bsStyle="primary"
-                        >
-                            <Bar data={data} options={chartOptions} />
-                        </Panel>
-                    </div>
-                    <div className="col-md-4">
-                        <Panel
-                            header={<span> Vehicles Use </span>}
-                            bsStyle="primary"
-                        >
-                            <Line data={dataLine} options={chartOptions} />
-                        </Panel>
-                    </div>
-                    <div className="col-md-4">
-                        <Panel
-                            header={<span> Average delivery time for dispatches </span>}
-                            bsStyle="primary"
-                        >
-                            <Bar data={data} options={chartOptions} />
-                        </Panel>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6">
-                        <Panel
-                            header={<span> Despachos Entregados </span>}
-                            bsStyle="primary"
-                        >
-                            <Bar data={data} options={chartOptions} />
-                        </Panel>
-                    </div>
-                    <div className="col-md-6">
-                        <Panel
-                            header={<span> Dispatch status </span>}
-                            bsStyle="primary"
-                        >
-                            <Pie data={dataPie} options={pieOptions} />
-                        </Panel>
-                    </div>
-                </div>
+
             </div>
         )
     }

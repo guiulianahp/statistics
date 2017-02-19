@@ -10,7 +10,6 @@ import Numeric from './Numeric.jsx'
 class Indicator extends Component {
     constructor(props){
         super(props);
-
         this.state = {
             dataNumeric: [],
             loading: true,
@@ -18,9 +17,7 @@ class Indicator extends Component {
     }
 
     async componentDidMount() {
-
         let date = this.props.date;
-
         const [
             vehicles,
             routes,
@@ -29,16 +26,38 @@ class Indicator extends Component {
             api.plan.getRoutesByDate(date),
         ]);
 
-        let jsonIndicator1 = new CalculationOfIndicator(vehicles, routes);
+        let jsonIndicator = new CalculationOfIndicator(vehicles, routes);
 
         this.setState({
-            dataNumeric: jsonIndicator1.getNumeric(),
+            dataNumeric: jsonIndicator.getNumeric(),
             loading: false,
         })
     }
 
+
+
+   // async componentWillReceiveProps() {
+   //
+   //     let date = this.props.date;
+   //     console.log(date);
+   //     const [
+   //         vehicles,
+   //         routes,
+   //     ] = await Promise.all([
+   //         api.plan.getVehiclesByDate(date),
+   //         api.plan.getRoutesByDate(date),
+   //     ]);
+   //
+   //     let jsonIndicator = new CalculationOfIndicator(vehicles, routes);
+   //
+   //     this.setState({
+   //         dataNumeric: jsonIndicator.getNumeric(),
+   //         loading: false,
+   //     })
+   //  }
+
     render() {
-        return(
+       return(
 
             <div className={styles.indicator}>
                 {this.state.loading && (
