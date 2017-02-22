@@ -21,9 +21,9 @@ class Home extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    handleChange (dates) {
+    handleChange (date) {
         this.setState({
-            date: dates
+            date: date
         });
     }
 

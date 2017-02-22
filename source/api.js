@@ -53,6 +53,11 @@ const api = {
             const response = await fetch(`${url}routes/plans/` + date +`/routes/`, _getAuthentication('GET'));
             const data = await response.json();
             return data;
+        },
+        async getVisitsByDate(startDate, endDate) {
+            const response = await fetch(`${url}routes/visits/history-visits/?start_date=${startDate}&end_date=${endDate}`, _getAuthentication('GET'));
+            const data = await response.json();
+            return data;
         }
     }
 
@@ -62,12 +67,12 @@ function _getAuthentication(method) {
     return { method: method, headers: headers}
 }
 
-function _orderByMonth(vehicles) {
+function _orderByMonth(data) {
     let months = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0};
     let month;
-    let data = [];
-    vehicles.forEach( function (vehicle) {
-        month = moment(vehicle.created).month();
+    let output = [];
+    data.forEach( function (item) {
+        month = moment(item.created).month();
         if (months[month]) {
             months[month] += 1
         } else {
@@ -76,9 +81,9 @@ function _orderByMonth(vehicles) {
     });
 
     for( let key in months) {
-        data.push(months[key]);
+        output.push(months[key]);
     }
-    return data;
+    return output;
 }
 
 export default api;

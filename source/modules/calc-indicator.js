@@ -61,7 +61,6 @@ function calculateAverageLoad(routes) {
         totalLoad3 = 0;
 
     routes.forEach(function (route) {
-        console.log(route);
         totalRoutes++;
         totalLoad += (route.total_load) ? route.total_load : 0;
         totalLoad2 += (route.total_load2) ? route.total_load2 : 0;

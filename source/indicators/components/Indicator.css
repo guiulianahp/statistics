@@ -2,58 +2,76 @@
     padding: 1em;
 }
 
+:global .panel-blue {
+    border-color: #586ba4;
+}
+
+:global .panel-blue .panel-heading {
+    border-color: #586ba4;
+    color: #fff;
+    background-color: #586ba4;
+}
+
+:global .panel-blue a {
+    color: #586ba4;
+}
+
+:global .panel-blue a:hover {
+    color: #586ba4;
+}
+
 :global .panel-green {
-    border-color: #5cb85c;
+    border-color: #41d3bd;
 }
 
 :global .panel-green .panel-heading {
-    border-color: #5cb85c;
+    border-color: #41d3bd;
     color: #fff;
-    background-color: #5cb85c;
+    background-color: #41d3bd;
 }
 
 :global .panel-green a {
-    color: #5cb85c;
+    color: #41d3bd;
 }
 
 :global .panel-green a:hover {
-    color: #3d8b3d;
+    color: #41d3bd;
 }
 
 :global .panel-red {
-    border-color: #d9534f;
+    border-color: #ff5252;
 }
 
 :global .panel-red .panel-heading {
-    border-color: #d9534f;
+    border-color: #ff5252;
     color: #fff;
-    background-color: #d9534f;
+    background-color: #ff5252;
 }
 
 :global .panel-red a {
-    color: #d9534f;
+    color: #ff5252;
 }
 
 :global .panel-red a:hover {
-    color: #b52b27;
+    color: #ff5252;
 }
 
 :global .panel-yellow {
-    border-color: #f0ad4e;
+    border-color: #ffcc33;
 }
 
 :global .panel-yellow .panel-heading {
-    border-color: #f0ad4e;
+    border-color: #ffcc33;
     color: #fff;
-    background-color: #f0ad4e;
+    background-color: #ffcc33;
 }
 
 :global .panel-yellow a {
-    color: #f0ad4e;
+    color: #ffcc33;
 }
 
 :global .panel-yellow a:hover {
-    color: #df8a13;
+    color: #ffcc33;
 }
 
 :global .huge {
