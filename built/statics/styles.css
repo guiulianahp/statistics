@@ -67,75 +67,75 @@
 }
 
 .panel-blue {
-    border-color: #586ba4;
+    border-color: #337ab7;
 }
 
 .panel-blue .panel-heading {
-    border-color: #586ba4;
+    border-color: #337ab7;
     color: #fff;
-    background-color: #586ba4;
+    background-color: #337ab7;
 }
 
 .panel-blue a {
-    color: #586ba4;
+    color: #337ab7;
 }
 
 .panel-blue a:hover {
-    color: #586ba4;
+    color: #337ab7;
 }
 
 .panel-green {
-    border-color: #41d3bd;
+    border-color: #27ae60;
 }
 
 .panel-green .panel-heading {
-    border-color: #41d3bd;
+    border-color: #27ae60;
     color: #fff;
-    background-color: #41d3bd;
+    background-color: #27ae60;
 }
 
 .panel-green a {
-    color: #41d3bd;
+    color: #27ae60;
 }
 
 .panel-green a:hover {
-    color: #41d3bd;
+    color: #27ae60;
 }
 
 .panel-red {
-    border-color: #ff5252;
+    border-color: #c0392b;
 }
 
 .panel-red .panel-heading {
-    border-color: #ff5252;
+    border-color: #c0392b;
     color: #fff;
-    background-color: #ff5252;
+    background-color: #c0392b;
 }
 
 .panel-red a {
-    color: #ff5252;
+    color: #c0392b;
 }
 
 .panel-red a:hover {
-    color: #ff5252;
+    color: #c0392b;
 }
 
 .panel-yellow {
-    border-color: #ffcc33;
+    border-color: #f1c40f;
 }
 
 .panel-yellow .panel-heading {
-    border-color: #ffcc33;
+    border-color: #f1c40f;
     color: #fff;
-    background-color: #ffcc33;
+    background-color: #f1c40f;
 }
 
 .panel-yellow a {
-    color: #ffcc33;
+    color: #f1c40f;
 }
 
 .panel-yellow a:hover {
-    color: #ffcc33;
+    color: #f1c40f;
 }
 
 .huge {

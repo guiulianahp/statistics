@@ -32,13 +32,13 @@ class VisitModel {
             datasets: [{
                 data: [completed, failed, pending],
                 backgroundColor: [
-                    '#41d3bd',
-                    '#ff5252',
+                    '#27ae60',
+                    '#c0392b',
                     '#b3cccc'
                 ],
                 hoverBackgroundColor: [
-                    '#41d3bd',
-                    '#ff5252',
+                    '#27ae60',
+                    '#c0392b',
                     '#b3cccc'
                 ]
             }]

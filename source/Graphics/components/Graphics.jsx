@@ -30,18 +30,18 @@ const dataObservations = {
         'Observation 4'
     ],
     datasets: [{
-        data: [300, 50, 100, 300],
+        data: [20, 30, 25, 25],
         backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#cc33ff'
+            '#c0392b',
+            '#337ab7',
+            '#f1c40f',
+            '#27ae60'
         ],
         hoverBackgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#cc33ff'
+            '#c0392b',
+            '#337ab7',
+            '#f1c40f',
+            '#27ae60'
         ]
     }]
 };
@@ -55,12 +55,12 @@ const dataKmTraveled = {
             type:'line',
             data: [51, 65, 50, 49, 60, 37, 40, 34, 43, 44, 33, 40],
             fill: true,
-            borderColor: '#6eddcc',
-            backgroundColor: '#eafaf8',
-            pointBorderColor: '#6eddcc',
-            pointBackgroundColor: '#eafaf8',
-            pointHoverBackgroundColor: '#6eddcc',
-            pointHoverBorderColor: '#6eddcc',
+            borderColor: '#bdc3c7',
+            backgroundColor: '#f1f2f3',
+            pointBorderColor: '#bdc3c7',
+            pointBackgroundColor: '#f1f2f3',
+            pointHoverBackgroundColor: '#bdc3c7',
+            pointHoverBorderColor: '#bdc3c7',
             yAxisID: 'y-axis-1'
         },
         {
@@ -68,12 +68,12 @@ const dataKmTraveled = {
             type:'line',
             data: [40, 69, 45, 54, 65, 40, 49, 39, 49, 52, 39, 49],
             fill: true,
-            borderColor: '#ffdf80',
-            backgroundColor: '#fff9e6',
-            pointBorderColor: '#ffdf80',
-            pointBackgroundColor: '#fff9e6',
+            borderColor: '#67b2e4',
+            backgroundColor: '#e9f4fb',
+            pointBorderColor: '#67b2e4',
+            pointBackgroundColor: '#67b2e4',
             pointHoverBackgroundColor: '#ffdf80',
-            pointHoverBorderColor: '#ffdf80',
+            pointHoverBorderColor: '#67b2e4',
             yAxisID: 'y-axis-1'
         },
         {
@@ -81,12 +81,12 @@ const dataKmTraveled = {
             type:'line',
             data: [59, 50, 50, 59, 69, 45, 52, 44, 53, 60, 45, 55],
             fill: true,
-            borderColor: '#ff8080',
-            backgroundColor: '#ffe6e6',
-            pointBorderColor: '#ff8080',
-            pointBackgroundColor: '#ffe6e6',
+            borderColor: '#c091d4',
+            backgroundColor: '#f4edf8',
+            pointBorderColor: '#c091d4',
+            pointBackgroundColor: '#c091d4',
             pointHoverBackgroundColor: '#ff8080',
-            pointHoverBorderColor: '#ff8080',
+            pointHoverBorderColor: '#c091d4',
             yAxisID: 'y-axis-1'
         }
     ]
@@ -100,20 +100,20 @@ const timeBetweenWindowsVisits = {
         label: 'Dispatches delivered within time window',
         data: [90, 94, 80, 89, 90, 94, 80, 89, 99, 89, 90, 95],
         fill: true,
-        backgroundColor: '#71B37C',
-        borderColor: '#71B37C',
-        hoverBackgroundColor: '#71B37C',
-        hoverBorderColor: '#71B37C',
+        backgroundColor: '#27ae60',
+        borderColor: '#27ae60',
+        hoverBackgroundColor: '#27ae60',
+        hoverBorderColor: '#27ae60',
         yAxisID: 'y-axis-1'
     },{
         type: 'bar',
         label: 'Dispatches delivered outside of time window',
         data: [10, 6, 20, 11, 10, 6, 20, 11, 1, 11, 10, 5],
         fill: true,
-        backgroundColor: '#FF6384',
-        borderColor: '#FF6384',
-        hoverBackgroundColor: '#FF6384',
-        hoverBorderColor: '#FF6384',
+        backgroundColor: '#c0392b',
+        borderColor: '#c0392b',
+        hoverBackgroundColor: '#c0392b',
+        hoverBorderColor: '#c0392b',
         yAxisID: 'y-axis-1'
     }]
 };

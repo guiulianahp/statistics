@@ -25418,11 +25418,11 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _About = __webpack_require__(597);
+	var _About = __webpack_require__(645);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Error = __webpack_require__(598);
+	var _Error = __webpack_require__(646);
 
 	var _Error2 = _interopRequireDefault(_Error);
 
@@ -25481,7 +25481,7 @@
 
 	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-	__webpack_require__(595);
+	__webpack_require__(643);
 
 	const startDate = (0, _moment2.default)();
 
@@ -60254,7 +60254,7 @@
 	        let averageLoad = calculateAverageLoad(this.routes);
 
 	        let numericJson = [{
-	            panelHead: "panel-primary",
+	            panelHead: "panel-blue",
 	            color: '#000',
 	            title: 'Used Vehicles',
 	            value: this.vehicles.length,
@@ -60444,13 +60444,13 @@
 
 	var _reactBootstrap = __webpack_require__(340);
 
-	var _reactChartjs = __webpack_require__(599);
+	var _reactChartjs = __webpack_require__(595);
 
 	var _moment = __webpack_require__(219);
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _visits = __webpack_require__(646);
+	var _visits = __webpack_require__(642);
 
 	var _visits2 = _interopRequireDefault(_visits);
 
@@ -60475,9 +60475,9 @@
 	const dataObservations = {
 	    labels: ['Observation 1', 'Observation 2', 'Observation 3', 'Observation 4'],
 	    datasets: [{
-	        data: [300, 50, 100, 300],
-	        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#cc33ff'],
-	        hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#cc33ff']
+	        data: [20, 30, 25, 25],
+	        backgroundColor: ['#c0392b', '#337ab7', '#f1c40f', '#27ae60'],
+	        hoverBackgroundColor: ['#c0392b', '#337ab7', '#f1c40f', '#27ae60']
 	    }]
 	};
 
@@ -60488,36 +60488,36 @@
 	        type: 'line',
 	        data: [51, 65, 50, 49, 60, 37, 40, 34, 43, 44, 33, 40],
 	        fill: true,
-	        borderColor: '#6eddcc',
-	        backgroundColor: '#eafaf8',
-	        pointBorderColor: '#6eddcc',
-	        pointBackgroundColor: '#eafaf8',
-	        pointHoverBackgroundColor: '#6eddcc',
-	        pointHoverBorderColor: '#6eddcc',
+	        borderColor: '#bdc3c7',
+	        backgroundColor: '#f1f2f3',
+	        pointBorderColor: '#bdc3c7',
+	        pointBackgroundColor: '#f1f2f3',
+	        pointHoverBackgroundColor: '#bdc3c7',
+	        pointHoverBorderColor: '#bdc3c7',
 	        yAxisID: 'y-axis-1'
 	    }, {
 	        label: 'Vehicle 2',
 	        type: 'line',
 	        data: [40, 69, 45, 54, 65, 40, 49, 39, 49, 52, 39, 49],
 	        fill: true,
-	        borderColor: '#ffdf80',
-	        backgroundColor: '#fff9e6',
-	        pointBorderColor: '#ffdf80',
-	        pointBackgroundColor: '#fff9e6',
+	        borderColor: '#67b2e4',
+	        backgroundColor: '#e9f4fb',
+	        pointBorderColor: '#67b2e4',
+	        pointBackgroundColor: '#67b2e4',
 	        pointHoverBackgroundColor: '#ffdf80',
-	        pointHoverBorderColor: '#ffdf80',
+	        pointHoverBorderColor: '#67b2e4',
 	        yAxisID: 'y-axis-1'
 	    }, {
 	        label: 'Vehicle 3',
 	        type: 'line',
 	        data: [59, 50, 50, 59, 69, 45, 52, 44, 53, 60, 45, 55],
 	        fill: true,
-	        borderColor: '#ff8080',
-	        backgroundColor: '#ffe6e6',
-	        pointBorderColor: '#ff8080',
-	        pointBackgroundColor: '#ffe6e6',
+	        borderColor: '#c091d4',
+	        backgroundColor: '#f4edf8',
+	        pointBorderColor: '#c091d4',
+	        pointBackgroundColor: '#c091d4',
 	        pointHoverBackgroundColor: '#ff8080',
-	        pointHoverBorderColor: '#ff8080',
+	        pointHoverBorderColor: '#c091d4',
 	        yAxisID: 'y-axis-1'
 	    }]
 	};
@@ -60529,20 +60529,20 @@
 	        label: 'Dispatches delivered within time window',
 	        data: [90, 94, 80, 89, 90, 94, 80, 89, 99, 89, 90, 95],
 	        fill: true,
-	        backgroundColor: '#71B37C',
-	        borderColor: '#71B37C',
-	        hoverBackgroundColor: '#71B37C',
-	        hoverBorderColor: '#71B37C',
+	        backgroundColor: '#27ae60',
+	        borderColor: '#27ae60',
+	        hoverBackgroundColor: '#27ae60',
+	        hoverBorderColor: '#27ae60',
 	        yAxisID: 'y-axis-1'
 	    }, {
 	        type: 'bar',
 	        label: 'Dispatches delivered outside of time window',
 	        data: [10, 6, 20, 11, 10, 6, 20, 11, 1, 11, 10, 5],
 	        fill: true,
-	        backgroundColor: '#FF6384',
-	        borderColor: '#FF6384',
-	        hoverBackgroundColor: '#FF6384',
-	        hoverBorderColor: '#FF6384',
+	        backgroundColor: '#c0392b',
+	        borderColor: '#c0392b',
+	        hoverBackgroundColor: '#c0392b',
+	        hoverBorderColor: '#c0392b',
 	        yAxisID: 'y-axis-1'
 	    }]
 	};
@@ -60814,97 +60814,6 @@
 
 /***/ },
 /* 595 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-	module.exports = {"react-datepicker__month--selecting-range":"Bpx6wrwSv_0V4iNNDETFZ"};
-
-/***/ },
-/* 596 */,
-/* 597 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(178);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	class About extends _react.Component {
-	    render() {
-	        return _react2.default.createElement(
-	            'section',
-	            { name: 'About' },
-	            _react2.default.createElement(
-	                'h1',
-	                null,
-	                'About'
-	            ),
-	            _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/' },
-	                'Go to home'
-	            ),
-	            _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/ramdom' },
-	                'Go to ramdom'
-	            )
-	        );
-	    }
-	}
-
-	exports.default = About;
-
-/***/ },
-/* 598 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(178);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	class Error404 extends _react.Component {
-	    render() {
-	        return _react2.default.createElement(
-	            'section',
-	            { name: 'error404' },
-	            _react2.default.createElement(
-	                'h1',
-	                null,
-	                'Error 404'
-	            ),
-	            _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/' },
-	                'Back to home'
-	            )
-	        );
-	    }
-	}
-
-	exports.default = Error404;
-
-/***/ },
-/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -60926,11 +60835,11 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _chart = __webpack_require__(600);
+	var _chart = __webpack_require__(596);
 
 	var _chart2 = _interopRequireDefault(_chart);
 
-	var _lodash = __webpack_require__(645);
+	var _lodash = __webpack_require__(641);
 
 	var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -61382,15 +61291,19 @@
 	exports.Chart = _chart2.default;
 
 /***/ },
-/* 600 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * @namespace Chart
 	 */
-	var Chart = __webpack_require__(601)();
+	var Chart = __webpack_require__(597)();
 
-	__webpack_require__(602)(Chart);
+	__webpack_require__(598)(Chart);
+	__webpack_require__(604)(Chart);
+	__webpack_require__(605)(Chart);
+	__webpack_require__(606)(Chart);
+	__webpack_require__(607)(Chart);
 	__webpack_require__(608)(Chart);
 	__webpack_require__(609)(Chart);
 	__webpack_require__(610)(Chart);
@@ -61401,6 +61314,7 @@
 	__webpack_require__(615)(Chart);
 	__webpack_require__(616)(Chart);
 	__webpack_require__(617)(Chart);
+
 	__webpack_require__(618)(Chart);
 	__webpack_require__(619)(Chart);
 	__webpack_require__(620)(Chart);
@@ -61410,36 +61324,31 @@
 	__webpack_require__(623)(Chart);
 	__webpack_require__(624)(Chart);
 	__webpack_require__(625)(Chart);
-
 	__webpack_require__(626)(Chart);
 	__webpack_require__(627)(Chart);
+
+	// Controllers must be loaded after elements
+	// See Chart.core.datasetController.dataElementType
 	__webpack_require__(628)(Chart);
 	__webpack_require__(629)(Chart);
 	__webpack_require__(630)(Chart);
 	__webpack_require__(631)(Chart);
-
-	// Controllers must be loaded after elements
-	// See Chart.core.datasetController.dataElementType
 	__webpack_require__(632)(Chart);
 	__webpack_require__(633)(Chart);
+
 	__webpack_require__(634)(Chart);
 	__webpack_require__(635)(Chart);
 	__webpack_require__(636)(Chart);
 	__webpack_require__(637)(Chart);
-
 	__webpack_require__(638)(Chart);
 	__webpack_require__(639)(Chart);
 	__webpack_require__(640)(Chart);
-	__webpack_require__(641)(Chart);
-	__webpack_require__(642)(Chart);
-	__webpack_require__(643)(Chart);
-	__webpack_require__(644)(Chart);
 
 	window.Chart = module.exports = Chart;
 
 
 /***/ },
-/* 601 */
+/* 597 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -61501,14 +61410,14 @@
 
 
 /***/ },
-/* 602 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* global window: false */
 	/* global document: false */
 	'use strict';
 
-	var color = __webpack_require__(603);
+	var color = __webpack_require__(599);
 
 	module.exports = function(Chart) {
 		// Global Chart helpers object for utility methods and classes
@@ -62563,12 +62472,12 @@
 
 
 /***/ },
-/* 603 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* MIT license */
-	var convert = __webpack_require__(604);
-	var string = __webpack_require__(606);
+	var convert = __webpack_require__(600);
+	var string = __webpack_require__(602);
 
 	var Color = function (obj) {
 		if (obj instanceof Color) {
@@ -63052,10 +62961,10 @@
 
 
 /***/ },
-/* 604 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var conversions = __webpack_require__(605);
+	var conversions = __webpack_require__(601);
 
 	var convert = function() {
 	   return new Converter();
@@ -63149,7 +63058,7 @@
 	module.exports = convert;
 
 /***/ },
-/* 605 */
+/* 601 */
 /***/ function(module, exports) {
 
 	/* MIT license */
@@ -63853,11 +63762,11 @@
 
 
 /***/ },
-/* 606 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* MIT license */
-	var colorNames = __webpack_require__(607);
+	var colorNames = __webpack_require__(603);
 
 	module.exports = {
 	   getRgba: getRgba,
@@ -64080,7 +63989,7 @@
 
 
 /***/ },
-/* 607 */
+/* 603 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -64235,7 +64144,7 @@
 	};
 
 /***/ },
-/* 608 */
+/* 604 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -64345,7 +64254,7 @@
 
 
 /***/ },
-/* 609 */
+/* 605 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -64447,7 +64356,7 @@
 
 
 /***/ },
-/* 610 */
+/* 606 */
 /***/ function(module, exports) {
 
 	/* global window: false */
@@ -64592,7 +64501,7 @@
 
 
 /***/ },
-/* 611 */
+/* 607 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -65401,7 +65310,7 @@
 
 
 /***/ },
-/* 612 */
+/* 608 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -65716,7 +65625,7 @@
 
 
 /***/ },
-/* 613 */
+/* 609 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -66061,7 +65970,7 @@
 
 
 /***/ },
-/* 614 */
+/* 610 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -66107,7 +66016,7 @@
 
 
 /***/ },
-/* 615 */
+/* 611 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -66242,7 +66151,7 @@
 
 
 /***/ },
-/* 616 */
+/* 612 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -66450,7 +66359,7 @@
 
 
 /***/ },
-/* 617 */
+/* 613 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -67207,7 +67116,7 @@
 
 
 /***/ },
-/* 618 */
+/* 614 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -67420,7 +67329,7 @@
 
 
 /***/ },
-/* 619 */
+/* 615 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -67925,7 +67834,7 @@
 
 
 /***/ },
-/* 620 */
+/* 616 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -68226,7 +68135,7 @@
 
 
 /***/ },
-/* 621 */
+/* 617 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69109,7 +69018,7 @@
 
 
 /***/ },
-/* 622 */
+/* 618 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69219,7 +69128,7 @@
 
 
 /***/ },
-/* 623 */
+/* 619 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69409,7 +69318,7 @@
 
 
 /***/ },
-/* 624 */
+/* 620 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69493,7 +69402,7 @@
 
 
 /***/ },
-/* 625 */
+/* 621 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69675,7 +69584,7 @@
 
 
 /***/ },
-/* 626 */
+/* 622 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69779,7 +69688,7 @@
 
 
 /***/ },
-/* 627 */
+/* 623 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69914,7 +69823,7 @@
 
 
 /***/ },
-/* 628 */
+/* 624 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -70088,7 +69997,7 @@
 
 
 /***/ },
-/* 629 */
+/* 625 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -70320,7 +70229,7 @@
 
 
 /***/ },
-/* 630 */
+/* 626 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -70742,7 +70651,7 @@
 
 
 /***/ },
-/* 631 */
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* global window: false */
@@ -71208,7 +71117,7 @@
 
 
 /***/ },
-/* 632 */
+/* 628 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -71764,7 +71673,7 @@
 
 
 /***/ },
-/* 633 */
+/* 629 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -71892,7 +71801,7 @@
 
 
 /***/ },
-/* 634 */
+/* 630 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -72201,7 +72110,7 @@
 
 
 /***/ },
-/* 635 */
+/* 631 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -72544,7 +72453,7 @@
 
 
 /***/ },
-/* 636 */
+/* 632 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -72765,7 +72674,7 @@
 
 
 /***/ },
-/* 637 */
+/* 633 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -72952,7 +72861,7 @@
 
 
 /***/ },
-/* 638 */
+/* 634 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -72969,7 +72878,7 @@
 
 
 /***/ },
-/* 639 */
+/* 635 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -72985,7 +72894,7 @@
 
 
 /***/ },
-/* 640 */
+/* 636 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -73002,7 +72911,7 @@
 
 
 /***/ },
-/* 641 */
+/* 637 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -73019,7 +72928,7 @@
 
 
 /***/ },
-/* 642 */
+/* 638 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -73036,7 +72945,7 @@
 
 
 /***/ },
-/* 643 */
+/* 639 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -73053,7 +72962,7 @@
 
 
 /***/ },
-/* 644 */
+/* 640 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -73106,7 +73015,7 @@
 
 
 /***/ },
-/* 645 */
+/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -74961,7 +74870,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(220)(module)))
 
 /***/ },
-/* 646 */
+/* 642 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -74998,8 +74907,8 @@
 	            labels: ['Completed', 'Failed', 'Pending'],
 	            datasets: [{
 	                data: [completed, failed, pending],
-	                backgroundColor: ['#41d3bd', '#ff5252', '#b3cccc'],
-	                hoverBackgroundColor: ['#41d3bd', '#ff5252', '#b3cccc']
+	                backgroundColor: ['#27ae60', '#c0392b', '#b3cccc'],
+	                hoverBackgroundColor: ['#27ae60', '#c0392b', '#b3cccc']
 	            }]
 	        };
 
@@ -75009,6 +74918,97 @@
 	}
 
 	exports.default = VisitModel;
+
+/***/ },
+/* 643 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"react-datepicker__month--selecting-range":"Bpx6wrwSv_0V4iNNDETFZ"};
+
+/***/ },
+/* 644 */,
+/* 645 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(178);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	class About extends _react.Component {
+	    render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { name: 'About' },
+	            _react2.default.createElement(
+	                'h1',
+	                null,
+	                'About'
+	            ),
+	            _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/' },
+	                'Go to home'
+	            ),
+	            _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/ramdom' },
+	                'Go to ramdom'
+	            )
+	        );
+	    }
+	}
+
+	exports.default = About;
+
+/***/ },
+/* 646 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(178);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	class Error404 extends _react.Component {
+	    render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { name: 'error404' },
+	            _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Error 404'
+	            ),
+	            _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/' },
+	                'Back to home'
+	            )
+	        );
+	    }
+	}
+
+	exports.default = Error404;
 
 /***/ }
 /******/ ]);

@@ -12,7 +12,7 @@ class CalculationOfIndicator {
 
         let numericJson = [
             {
-                panelHead: "panel-primary",
+                panelHead: "panel-blue",
                 color: '#000',
                 title: 'Used Vehicles',
                 value: this.vehicles.length,

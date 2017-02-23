@@ -62,7 +62,7 @@
 
 	var _Dashboard2 = _interopRequireDefault(_Dashboard);
 
-	var _Layout = __webpack_require__(640);
+	var _Layout = __webpack_require__(688);
 
 	var _Layout2 = _interopRequireDefault(_Layout);
 
@@ -24278,11 +24278,11 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _About = __webpack_require__(638);
+	var _About = __webpack_require__(686);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Error = __webpack_require__(639);
+	var _Error = __webpack_require__(687);
 
 	var _Error2 = _interopRequireDefault(_Error);
 
@@ -24341,7 +24341,7 @@
 
 	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-	__webpack_require__(636);
+	__webpack_require__(684);
 
 	const startDate = (0, _moment2.default)();
 
@@ -71826,7 +71826,7 @@
 	        let averageLoad = calculateAverageLoad(this.routes);
 
 	        let numericJson = [{
-	            panelHead: "panel-primary",
+	            panelHead: "panel-blue",
 	            color: '#000',
 	            title: 'Used Vehicles',
 	            value: this.vehicles.length,
@@ -72016,13 +72016,13 @@
 
 	var _reactBootstrap = __webpack_require__(381);
 
-	var _reactChartjs = __webpack_require__(641);
+	var _reactChartjs = __webpack_require__(636);
 
 	var _moment = __webpack_require__(213);
 
 	var _moment2 = _interopRequireDefault(_moment);
 
-	var _visits = __webpack_require__(688);
+	var _visits = __webpack_require__(683);
 
 	var _visits2 = _interopRequireDefault(_visits);
 
@@ -72047,9 +72047,9 @@
 	const dataObservations = {
 	    labels: ['Observation 1', 'Observation 2', 'Observation 3', 'Observation 4'],
 	    datasets: [{
-	        data: [300, 50, 100, 300],
-	        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#cc33ff'],
-	        hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#cc33ff']
+	        data: [20, 30, 25, 25],
+	        backgroundColor: ['#c0392b', '#337ab7', '#f1c40f', '#27ae60'],
+	        hoverBackgroundColor: ['#c0392b', '#337ab7', '#f1c40f', '#27ae60']
 	    }]
 	};
 
@@ -72060,36 +72060,36 @@
 	        type: 'line',
 	        data: [51, 65, 50, 49, 60, 37, 40, 34, 43, 44, 33, 40],
 	        fill: true,
-	        borderColor: '#6eddcc',
-	        backgroundColor: '#eafaf8',
-	        pointBorderColor: '#6eddcc',
-	        pointBackgroundColor: '#eafaf8',
-	        pointHoverBackgroundColor: '#6eddcc',
-	        pointHoverBorderColor: '#6eddcc',
+	        borderColor: '#bdc3c7',
+	        backgroundColor: '#f1f2f3',
+	        pointBorderColor: '#bdc3c7',
+	        pointBackgroundColor: '#f1f2f3',
+	        pointHoverBackgroundColor: '#bdc3c7',
+	        pointHoverBorderColor: '#bdc3c7',
 	        yAxisID: 'y-axis-1'
 	    }, {
 	        label: 'Vehicle 2',
 	        type: 'line',
 	        data: [40, 69, 45, 54, 65, 40, 49, 39, 49, 52, 39, 49],
 	        fill: true,
-	        borderColor: '#ffdf80',
-	        backgroundColor: '#fff9e6',
-	        pointBorderColor: '#ffdf80',
-	        pointBackgroundColor: '#fff9e6',
+	        borderColor: '#67b2e4',
+	        backgroundColor: '#e9f4fb',
+	        pointBorderColor: '#67b2e4',
+	        pointBackgroundColor: '#67b2e4',
 	        pointHoverBackgroundColor: '#ffdf80',
-	        pointHoverBorderColor: '#ffdf80',
+	        pointHoverBorderColor: '#67b2e4',
 	        yAxisID: 'y-axis-1'
 	    }, {
 	        label: 'Vehicle 3',
 	        type: 'line',
 	        data: [59, 50, 50, 59, 69, 45, 52, 44, 53, 60, 45, 55],
 	        fill: true,
-	        borderColor: '#ff8080',
-	        backgroundColor: '#ffe6e6',
-	        pointBorderColor: '#ff8080',
-	        pointBackgroundColor: '#ffe6e6',
+	        borderColor: '#c091d4',
+	        backgroundColor: '#f4edf8',
+	        pointBorderColor: '#c091d4',
+	        pointBackgroundColor: '#c091d4',
 	        pointHoverBackgroundColor: '#ff8080',
-	        pointHoverBorderColor: '#ff8080',
+	        pointHoverBorderColor: '#c091d4',
 	        yAxisID: 'y-axis-1'
 	    }]
 	};
@@ -72101,20 +72101,20 @@
 	        label: 'Dispatches delivered within time window',
 	        data: [90, 94, 80, 89, 90, 94, 80, 89, 99, 89, 90, 95],
 	        fill: true,
-	        backgroundColor: '#71B37C',
-	        borderColor: '#71B37C',
-	        hoverBackgroundColor: '#71B37C',
-	        hoverBorderColor: '#71B37C',
+	        backgroundColor: '#27ae60',
+	        borderColor: '#27ae60',
+	        hoverBackgroundColor: '#27ae60',
+	        hoverBorderColor: '#27ae60',
 	        yAxisID: 'y-axis-1'
 	    }, {
 	        type: 'bar',
 	        label: 'Dispatches delivered outside of time window',
 	        data: [10, 6, 20, 11, 10, 6, 20, 11, 1, 11, 10, 5],
 	        fill: true,
-	        backgroundColor: '#FF6384',
-	        borderColor: '#FF6384',
-	        hoverBackgroundColor: '#FF6384',
-	        hoverBorderColor: '#FF6384',
+	        backgroundColor: '#c0392b',
+	        borderColor: '#c0392b',
+	        hoverBackgroundColor: '#c0392b',
+	        hoverBorderColor: '#c0392b',
 	        yAxisID: 'y-axis-1'
 	    }]
 	};
@@ -72386,159 +72386,6 @@
 
 /***/ },
 /* 636 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-	module.exports = {"react-datepicker__month--selecting-range":"Bpx6wrwSv_0V4iNNDETFZ"};
-
-/***/ },
-/* 637 */,
-/* 638 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	class About extends _react.Component {
-	    render() {
-	        return _react2.default.createElement(
-	            'section',
-	            { name: 'About' },
-	            _react2.default.createElement(
-	                'h1',
-	                null,
-	                'About'
-	            ),
-	            _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/' },
-	                'Go to home'
-	            ),
-	            _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/ramdom' },
-	                'Go to ramdom'
-	            )
-	        );
-	    }
-	}
-
-	exports.default = About;
-
-/***/ },
-/* 639 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	class Error404 extends _react.Component {
-	    render() {
-	        return _react2.default.createElement(
-	            'section',
-	            { name: 'error404' },
-	            _react2.default.createElement(
-	                'h1',
-	                null,
-	                'Error 404'
-	            ),
-	            _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/' },
-	                'Back to home'
-	            )
-	        );
-	    }
-	}
-
-	exports.default = Error404;
-
-/***/ },
-/* 640 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function Layout(props) {
-	    return _react2.default.createElement(
-	        "html",
-	        null,
-	        _react2.default.createElement(
-	            "head",
-	            null,
-	            _react2.default.createElement("meta", { charSet: "utf-8" }),
-	            _react2.default.createElement(
-	                "title",
-	                null,
-	                props.title
-	            ),
-	            _react2.default.createElement("meta", {
-	                name: "viewport",
-	                content: "width=device-width, initial-scale=1.0, minimum-scale=1.0"
-	            }),
-	            _react2.default.createElement("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" }),
-	            _react2.default.createElement("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" }),
-	            _react2.default.createElement("link", {
-	                rel: "stylesheet",
-	                href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-	            }),
-	            _react2.default.createElement("link", {
-	                rel: "stylesheet",
-	                href: "http://localhost:3001/styles.css"
-	            })
-	        ),
-	        _react2.default.createElement(
-	            "body",
-	            null,
-	            _react2.default.createElement("div", {
-	                id: "render-target",
-	                dangerouslySetInnetHTML: {
-	                    __html: props.content
-	                }
-	            }),
-	            _react2.default.createElement("script", { src: "https://code.jquery.com/jquery-3.1.1.min.js" }),
-	            _react2.default.createElement("script", { src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" }),
-	            _react2.default.createElement("script", { src: "http://localhost:3001/app.js" })
-	        )
-	    );
-	}
-
-	exports.default = Layout;
-
-/***/ },
-/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -72560,11 +72407,11 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _chart = __webpack_require__(642);
+	var _chart = __webpack_require__(637);
 
 	var _chart2 = _interopRequireDefault(_chart);
 
-	var _lodash = __webpack_require__(687);
+	var _lodash = __webpack_require__(682);
 
 	var _lodash2 = _interopRequireDefault(_lodash);
 
@@ -73016,15 +72863,20 @@
 	exports.Chart = _chart2.default;
 
 /***/ },
-/* 642 */
+/* 637 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * @namespace Chart
 	 */
-	var Chart = __webpack_require__(643)();
+	var Chart = __webpack_require__(638)();
 
-	__webpack_require__(644)(Chart);
+	__webpack_require__(639)(Chart);
+	__webpack_require__(645)(Chart);
+	__webpack_require__(646)(Chart);
+	__webpack_require__(647)(Chart);
+	__webpack_require__(648)(Chart);
+	__webpack_require__(649)(Chart);
 	__webpack_require__(650)(Chart);
 	__webpack_require__(651)(Chart);
 	__webpack_require__(652)(Chart);
@@ -73034,46 +72886,41 @@
 	__webpack_require__(656)(Chart);
 	__webpack_require__(657)(Chart);
 	__webpack_require__(658)(Chart);
+
 	__webpack_require__(659)(Chart);
 	__webpack_require__(660)(Chart);
 	__webpack_require__(661)(Chart);
 	__webpack_require__(662)(Chart);
-	__webpack_require__(663)(Chart);
 
+	__webpack_require__(663)(Chart);
 	__webpack_require__(664)(Chart);
 	__webpack_require__(665)(Chart);
 	__webpack_require__(666)(Chart);
 	__webpack_require__(667)(Chart);
-
 	__webpack_require__(668)(Chart);
+
+	// Controllers must be loaded after elements
+	// See Chart.core.datasetController.dataElementType
 	__webpack_require__(669)(Chart);
 	__webpack_require__(670)(Chart);
 	__webpack_require__(671)(Chart);
 	__webpack_require__(672)(Chart);
 	__webpack_require__(673)(Chart);
-
-	// Controllers must be loaded after elements
-	// See Chart.core.datasetController.dataElementType
 	__webpack_require__(674)(Chart);
+
 	__webpack_require__(675)(Chart);
 	__webpack_require__(676)(Chart);
 	__webpack_require__(677)(Chart);
 	__webpack_require__(678)(Chart);
 	__webpack_require__(679)(Chart);
-
 	__webpack_require__(680)(Chart);
 	__webpack_require__(681)(Chart);
-	__webpack_require__(682)(Chart);
-	__webpack_require__(683)(Chart);
-	__webpack_require__(684)(Chart);
-	__webpack_require__(685)(Chart);
-	__webpack_require__(686)(Chart);
 
 	window.Chart = module.exports = Chart;
 
 
 /***/ },
-/* 643 */
+/* 638 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -73135,14 +72982,14 @@
 
 
 /***/ },
-/* 644 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* global window: false */
 	/* global document: false */
 	'use strict';
 
-	var color = __webpack_require__(645);
+	var color = __webpack_require__(640);
 
 	module.exports = function(Chart) {
 		// Global Chart helpers object for utility methods and classes
@@ -74197,12 +74044,12 @@
 
 
 /***/ },
-/* 645 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* MIT license */
-	var convert = __webpack_require__(646);
-	var string = __webpack_require__(648);
+	var convert = __webpack_require__(641);
+	var string = __webpack_require__(643);
 
 	var Color = function (obj) {
 		if (obj instanceof Color) {
@@ -74686,10 +74533,10 @@
 
 
 /***/ },
-/* 646 */
+/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var conversions = __webpack_require__(647);
+	var conversions = __webpack_require__(642);
 
 	var convert = function() {
 	   return new Converter();
@@ -74783,7 +74630,7 @@
 	module.exports = convert;
 
 /***/ },
-/* 647 */
+/* 642 */
 /***/ function(module, exports) {
 
 	/* MIT license */
@@ -75487,11 +75334,11 @@
 
 
 /***/ },
-/* 648 */
+/* 643 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* MIT license */
-	var colorNames = __webpack_require__(649);
+	var colorNames = __webpack_require__(644);
 
 	module.exports = {
 	   getRgba: getRgba,
@@ -75714,7 +75561,7 @@
 
 
 /***/ },
-/* 649 */
+/* 644 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -75869,7 +75716,7 @@
 	};
 
 /***/ },
-/* 650 */
+/* 645 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -75979,7 +75826,7 @@
 
 
 /***/ },
-/* 651 */
+/* 646 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -76081,7 +75928,7 @@
 
 
 /***/ },
-/* 652 */
+/* 647 */
 /***/ function(module, exports) {
 
 	/* global window: false */
@@ -76226,7 +76073,7 @@
 
 
 /***/ },
-/* 653 */
+/* 648 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -77035,7 +76882,7 @@
 
 
 /***/ },
-/* 654 */
+/* 649 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -77350,7 +77197,7 @@
 
 
 /***/ },
-/* 655 */
+/* 650 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -77695,7 +77542,7 @@
 
 
 /***/ },
-/* 656 */
+/* 651 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -77741,7 +77588,7 @@
 
 
 /***/ },
-/* 657 */
+/* 652 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -77876,7 +77723,7 @@
 
 
 /***/ },
-/* 658 */
+/* 653 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -78084,7 +77931,7 @@
 
 
 /***/ },
-/* 659 */
+/* 654 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -78841,7 +78688,7 @@
 
 
 /***/ },
-/* 660 */
+/* 655 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -79054,7 +78901,7 @@
 
 
 /***/ },
-/* 661 */
+/* 656 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -79559,7 +79406,7 @@
 
 
 /***/ },
-/* 662 */
+/* 657 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -79860,7 +79707,7 @@
 
 
 /***/ },
-/* 663 */
+/* 658 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -80743,7 +80590,7 @@
 
 
 /***/ },
-/* 664 */
+/* 659 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -80853,7 +80700,7 @@
 
 
 /***/ },
-/* 665 */
+/* 660 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -81043,7 +80890,7 @@
 
 
 /***/ },
-/* 666 */
+/* 661 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -81127,7 +80974,7 @@
 
 
 /***/ },
-/* 667 */
+/* 662 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -81309,7 +81156,7 @@
 
 
 /***/ },
-/* 668 */
+/* 663 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -81413,7 +81260,7 @@
 
 
 /***/ },
-/* 669 */
+/* 664 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -81548,7 +81395,7 @@
 
 
 /***/ },
-/* 670 */
+/* 665 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -81722,7 +81569,7 @@
 
 
 /***/ },
-/* 671 */
+/* 666 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -81954,7 +81801,7 @@
 
 
 /***/ },
-/* 672 */
+/* 667 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -82376,7 +82223,7 @@
 
 
 /***/ },
-/* 673 */
+/* 668 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* global window: false */
@@ -82842,7 +82689,7 @@
 
 
 /***/ },
-/* 674 */
+/* 669 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -83398,7 +83245,7 @@
 
 
 /***/ },
-/* 675 */
+/* 670 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -83526,7 +83373,7 @@
 
 
 /***/ },
-/* 676 */
+/* 671 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -83835,7 +83682,7 @@
 
 
 /***/ },
-/* 677 */
+/* 672 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -84178,7 +84025,7 @@
 
 
 /***/ },
-/* 678 */
+/* 673 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -84399,7 +84246,7 @@
 
 
 /***/ },
-/* 679 */
+/* 674 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -84586,7 +84433,7 @@
 
 
 /***/ },
-/* 680 */
+/* 675 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -84603,7 +84450,7 @@
 
 
 /***/ },
-/* 681 */
+/* 676 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -84619,7 +84466,7 @@
 
 
 /***/ },
-/* 682 */
+/* 677 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -84636,7 +84483,7 @@
 
 
 /***/ },
-/* 683 */
+/* 678 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -84653,7 +84500,7 @@
 
 
 /***/ },
-/* 684 */
+/* 679 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -84670,7 +84517,7 @@
 
 
 /***/ },
-/* 685 */
+/* 680 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -84687,7 +84534,7 @@
 
 
 /***/ },
-/* 686 */
+/* 681 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -84740,7 +84587,7 @@
 
 
 /***/ },
-/* 687 */
+/* 682 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/**
@@ -86595,7 +86442,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(214)(module)))
 
 /***/ },
-/* 688 */
+/* 683 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -86632,8 +86479,8 @@
 	            labels: ['Completed', 'Failed', 'Pending'],
 	            datasets: [{
 	                data: [completed, failed, pending],
-	                backgroundColor: ['#41d3bd', '#ff5252', '#b3cccc'],
-	                hoverBackgroundColor: ['#41d3bd', '#ff5252', '#b3cccc']
+	                backgroundColor: ['#27ae60', '#c0392b', '#b3cccc'],
+	                hoverBackgroundColor: ['#27ae60', '#c0392b', '#b3cccc']
 	            }]
 	        };
 
@@ -86643,6 +86490,159 @@
 	}
 
 	exports.default = VisitModel;
+
+/***/ },
+/* 684 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"react-datepicker__month--selecting-range":"Bpx6wrwSv_0V4iNNDETFZ"};
+
+/***/ },
+/* 685 */,
+/* 686 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	class About extends _react.Component {
+	    render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { name: 'About' },
+	            _react2.default.createElement(
+	                'h1',
+	                null,
+	                'About'
+	            ),
+	            _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/' },
+	                'Go to home'
+	            ),
+	            _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/ramdom' },
+	                'Go to ramdom'
+	            )
+	        );
+	    }
+	}
+
+	exports.default = About;
+
+/***/ },
+/* 687 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	class Error404 extends _react.Component {
+	    render() {
+	        return _react2.default.createElement(
+	            'section',
+	            { name: 'error404' },
+	            _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Error 404'
+	            ),
+	            _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/' },
+	                'Back to home'
+	            )
+	        );
+	    }
+	}
+
+	exports.default = Error404;
+
+/***/ },
+/* 688 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function Layout(props) {
+	    return _react2.default.createElement(
+	        "html",
+	        null,
+	        _react2.default.createElement(
+	            "head",
+	            null,
+	            _react2.default.createElement("meta", { charSet: "utf-8" }),
+	            _react2.default.createElement(
+	                "title",
+	                null,
+	                props.title
+	            ),
+	            _react2.default.createElement("meta", {
+	                name: "viewport",
+	                content: "width=device-width, initial-scale=1.0, minimum-scale=1.0"
+	            }),
+	            _react2.default.createElement("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" }),
+	            _react2.default.createElement("link", { rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" }),
+	            _react2.default.createElement("link", {
+	                rel: "stylesheet",
+	                href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+	            }),
+	            _react2.default.createElement("link", {
+	                rel: "stylesheet",
+	                href: "http://localhost:3001/styles.css"
+	            })
+	        ),
+	        _react2.default.createElement(
+	            "body",
+	            null,
+	            _react2.default.createElement("div", {
+	                id: "render-target",
+	                dangerouslySetInnetHTML: {
+	                    __html: props.content
+	                }
+	            }),
+	            _react2.default.createElement("script", { src: "https://code.jquery.com/jquery-3.1.1.min.js" }),
+	            _react2.default.createElement("script", { src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" }),
+	            _react2.default.createElement("script", { src: "http://localhost:3001/app.js" })
+	        )
+	    );
+	}
+
+	exports.default = Layout;
 
 /***/ }
 /******/ ]);
